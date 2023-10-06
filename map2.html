@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=b40e6b89fc3c75c57264f3687949c1ce"></script>
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+        
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+        
+        #container {
+            height: 100%
+        }
+        .amap-icon img,
+        .amap-marker-content img{
+            width: 25px;
+            height: 34px;
+        }
+        .marker {
+            position: absolute;
+            top: -20px;
+            right: -118px;
+            color: #fff;
+            padding: 4px 10px;
+            box-shadow: 1px 1px 1px rgba(10, 10, 10, .2);
+            white-space: nowrap;
+            font-size: 12px;
+            font-family: "";
+            background-color: #25A5F7;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="container"></div>
+    <script type="text/javascript">
+   
+     // 点击box发送ajax请求
+     
+       // 创建ajax对象,对象调用成员实现对服务器的请求
+       // 1.创建ajax对象
+       var xhr = new XMLHttpRequest();
+   
+   
+       // 2.创建一个新的http请求,(打开浏览器,输入请求地址)
+       // xhr.open(请求的方式(get/post),请求的地址[,异步同步请求])
+       xhr.open('get','http://124.221.239.172:8080/location');
+   
+       // 3.发送请求
+       // xhr.send(传递post请求的数据/ get请求设置 null)
+       xhr.send(null);
+   
+       // 4.监听状态变化事件,获取后台返回数据
+       xhr.onreadystatechange = function(){
+           if(xhr.readyState == 4){
+               alert(xhr.responseText)
+           }
+       }
+   
+       var temp_information=xhr.responseText;
+       console.log( temp_information);
+ 
+
+
+
+        var map = new AMap.Map('container', {
+            zoom: 11, //级别
+            center: [113.3445, 23.166753], //中心点坐标
+            viewMode: '3D' //使用3D视图
+        });
+        
+        marker = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3400, 23.1660],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        marker2 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3430, 23.166753],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        marker3 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3430, 23.1661],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        marker4 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3405, 23.1658],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        marker5 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3420, 23.1657],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        marker6 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3415, 23.1656],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        marker7 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3395, 23.1661],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        
+        marker.setMap(map);
+        marker2.setMap(map);
+        marker3.setMap(map);
+        marker4.setMap(map);
+        marker5.setMap(map);
+        marker6.setMap(map);
+        marker7.setMap(map);
+
+    </script>
+</body>
+
+
+</html>

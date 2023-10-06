@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=b40e6b89fc3c75c57264f3687949c1ce"></script>
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+        
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+        
+        #container {
+            height: 100%
+        }
+        .amap-icon img,
+        .amap-marker-content img{
+            width: 25px;
+            height: 34px;
+        }
+        .marker {
+            position: absolute;
+            top: -20px;
+            right: -118px;
+            color: #fff;
+            padding: 4px 10px;
+            box-shadow: 1px 1px 1px rgba(10, 10, 10, .2);
+            white-space: nowrap;
+            font-size: 12px;
+            font-family: "";
+            background-color: #25A5F7;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="container"></div>
+    <script type="text/javascript">
+   
+        var map = new AMap.Map('container', {
+            zoom: 11,
+            center: [113.3445, 23.166753],
+            viewMode: '3D'
+        });
+        
+        // 创建Marker对象
+        var marker = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3400, 23.1660],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        var marker2 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3430, 23.166753],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        var marker3 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3430, 23.1661],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        var marker4 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3405, 23.1658],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        var marker5 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3420, 23.1657],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        var marker6 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3415, 23.1656],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        var marker7 = new AMap.Marker({
+            icon: "\poi-marker-default.png",
+            position: [113.3395, 23.1661],
+            offset: new AMap.Pixel(-13, -30)
+        });
+        
+        // 将Marker对象添加到地图上
+        marker.setMap(map);
+        marker2.setMap(map);
+        marker3.setMap(map);
+        marker4.setMap(map);
+        marker5.setMap(map);
+        marker6.setMap(map);
+        marker7.setMap(map);
+
+        // 给marker添加事件监听器
+        marker.on('click', function(e) {
+            showMarkerInfo(e.target);
+        });
+        marker2.on('click', function(e) {
+            showMarkerInfo(e.target);
+        });
+        marker3.on('click', function(e) {
+            showMarkerInfo(e.target);
+        });
+        marker4.on('click', function(e) {
+            showMarkerInfo(e.target);
+        });
+        marker5.on('click', function(e) {
+            showMarkerInfo(e.target);
+        });
+        marker6.on('click', function(e) {
+            showMarkerInfo(e.target);
+        });
+        marker7.on('click', function(e) {
+            showMarkerInfo(e.target);
+        });
+        
+        // 显示Marker信息的函数
+        function showMarkerInfo(marker) {
+            // 获取Marker的位置信息
+            var position = marker.getPosition();
+
+            // 创建一个信息窗体
+            var infoWindow = new AMap.InfoWindow({
+                content: "位置: " + position,
+                offset: new AMap.Pixel(0, -25)
+            });
+
+            // 开启信息窗体
+            infoWindow.open(map, position);
+        }
+
+    </script>
+</body>
+</html>
