@@ -1,1 +1,1 @@
-# YOLO_EDGE🚀
+# <p align="center">YOLO_EDGE🚀</p>
