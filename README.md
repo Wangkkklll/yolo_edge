@@ -9,7 +9,7 @@
 
 ## Usage
 1、模型的训练  
-使用的模型为yolov5与yolov5-lite，具体训练的流程与权重参考[YOLOv5-Lite下的README文档](https://github.com/Wangkkklll/yolo_edge/tree/main/YOLOv5-Lite-)  
+使用的模型为yolov5与yolov5-lite，具体训练的流程与权重参考[YOLOv5-Lite下的README文档](https://github.com/Wangkkklll/yolo_edge/tree/main/YOLOv5-Lite)  
   
 2、模型的部署  
 部署采用的框架为NCNN，具体步骤参考[test320_yolov5_lite下的README文档](https://github.com/Wangkkklll/yolo_edge/tree/main/test320_yolov5_lite)  
