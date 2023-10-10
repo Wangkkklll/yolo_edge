@@ -7,7 +7,8 @@
 本项目采用COCO数据集提取行人样本，RDD2022数据集提取路面缺陷样本。  
 最终处理得到65535个行人数据集与38385个路面缺陷数据集。  
 而对于合并后的数据集的异常样本，进行了手动剔除，如下所示：  
-![image](https://github.com/Wangkkklll/yolo_edge/assets/71534709/5fc18048-9b6f-4c25-a381-c766d2524bcb)  
+![image](https://github.com/Wangkkklll/yolo_edge/assets/71534709/ee6f6fb8-3699-4001-8678-528207ff9d72)
+
 部分道路缺陷的数据集中存在行人，但是在合并过程中，是没有这部分行人的数据的，因此这些数据的存在对模型的训练的精度的影响非常大。  
 
 # data open
