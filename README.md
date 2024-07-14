@@ -1,5 +1,5 @@
 # <p align="center"> YOLO_EDGE🚀</p>
-## Open soon~
+### News 2024-07-14 The usage guidelines will be improved within this month
 <p align="center"><img src="https://img.shields.io/badge/YOLO~EDGE-v0.1-red?logo=gitlab&style=for-the-badge"> <img src="https://img.shields.io/badge/license-MIT-blue?logo=Hexo&style=for-the-badge"> </p>
 
 ## Introduction 
