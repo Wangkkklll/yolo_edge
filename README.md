@@ -17,10 +17,10 @@ The models used are yolov5 and yolov5-lite. For the specific training process, r
 The framework used for deployment is NCNN. For specific steps, refer to [test320_yolov5_lite: README.md](https://github.com/Wangkkklll/yolo_edge/tree/main/test320_yolov5_lite)  
 
 3、Visualization  
-Read the coordinates through GPS and call the Amap API to mark them. For details, refer to [Visualization.md]()  
+Read the coordinates through GPS and call the Amap API to mark them. For details, refer to [Visualization](https://github.com/Wangkkklll/yolo_edge/tree/main/YOLOv5-Lite)  
 
 4、Distance measurement module  
-The ranging module is divided into ultrasonic ranging and visual ranging. For details, please refer to [Distance.md]()
+The ranging module is divided into ultrasonic ranging and visual ranging. For details, please refer to [Distance](https://github.com/Wangkkklll/yolo_edge/tree/main/YOLOv5-Lite)
 ## Contact us
 kangliwang@stu.pku.edu.cn
 ## Ref
