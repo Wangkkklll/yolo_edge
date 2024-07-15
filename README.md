@@ -1,6 +1,6 @@
 # <p align="center"> YOLO_EDGE🚀</p>
 ### News 
-**2024-07-15** We open-sourced the dataset and updated the documentation for training and deploying models.  
+**2024-07-15** We open the dataset and updated the documentation for training and deploying models.  
 **2023-10-06**  We released code and pre-trained model.
 <p align="center"><img src="https://img.shields.io/badge/YOLO~EDGE-v0.1-red?logo=gitlab&style=for-the-badge"> <img src="https://img.shields.io/badge/license-MIT-blue?logo=Hexo&style=for-the-badge"> </p>
 
