@@ -424,7 +424,9 @@ static void draw_objects(const cv::Mat& bgr, const std::vector<Object>& objects)
     };
  
     cv::Mat image = bgr.clone();
+    //  We assume that the height of the person being tested is 1.65m, and the distance can be calculated based on the imaging principle.
     float height = 1.65;
+    // The focal length of the camera is determined by the camera used and can be measured by the captured image and MATLAB.
     float f = 337.4773;
     
  
