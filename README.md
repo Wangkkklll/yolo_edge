@@ -5,25 +5,29 @@
 <p align="center"><img src="https://img.shields.io/badge/YOLO~EDGE-v0.1-red?logo=gitlab&style=for-the-badge"> <img src="https://img.shields.io/badge/license-MIT-blue?logo=Hexo&style=for-the-badge"> </p>
 
 ## Introduction 
-1、本项目是基于目标检测算法的车载辅助系统，同时具备检测行人与路面缺陷的能力  
-2、所部署的硬件设备为树莓派4B  
-3、具体的实现效果可参考[bilibili视频演示](https://www.bilibili.com/video/BV1EV411M7fK/?spm_id_from=333.999.0.0)
+1、This project is an on-board assistance system based on target detection algorithm, which also has the ability to detect pedestrians and road defects.  
+2、The deployed hardware device is Raspberry Pi 4B.  
+3、The specific implementation effect is [bilibili video](https://www.bilibili.com/video/BV1EV411M7fK/?spm_id_from=333.999.0.0)
 
 ## Usage
-1、模型的训练  
-使用的模型为yolov5与yolov5-lite，具体训练的流程与权重参考[YOLOv5-Lite下的README文档](https://github.com/Wangkkklll/yolo_edge/tree/main/YOLOv5-Lite)  
+1、Model Training  
+The models used are yolov5 and yolov5-lite. For the specific training process, refer to [YOLOv5-Lite: README.md](https://github.com/Wangkkklll/yolo_edge/tree/main/YOLOv5-Lite)  
   
-2、模型的部署  
-部署采用的框架为NCNN，具体步骤参考[test320_yolov5_lite下的README文档](https://github.com/Wangkkklll/yolo_edge/tree/main/test320_yolov5_lite)  
+2、Model deployment  
+The framework used for deployment is NCNN. For specific steps, refer to [test320_yolov5_lite: README.md](https://github.com/Wangkkklll/yolo_edge/tree/main/test320_yolov5_lite)  
 
-3、路面缺陷检测结果可视化  
-首先通过GPS读取坐标，并调用高德地图API进行标记，具体参考[可视化代码使用文档]()  
+3、Visualization  
+Read the coordinates through GPS and call the Amap API to mark them. For details, refer to [Visualization.md]()  
 
-4、测距模块  
-测距模块分为超声测距与视觉测距，具体参考[测距模块文档]()
+4、Distance measurement module  
+The ranging module is divided into ultrasonic ranging and visual ranging. For details, please refer to [Distance.md]()
+## Contact us
+kangliwang@stu.pku.edu.cn
+## Ref
+[1] Xiangrong Chen, & Ziman Gong. YOLOv5-Lite: Lighter, faster and easier to deploy.
 
-## 参考项目
-<div id="refer-id"></div>
-[1]Xiangrong Chen, & Ziman Gong. YOLOv5-Lite: Lighter, faster and easier to deploy.
+[2] https://github.com/ultralytics/yolov5
+
+[3] https://github.com/Tencent/ncnn
 
 
